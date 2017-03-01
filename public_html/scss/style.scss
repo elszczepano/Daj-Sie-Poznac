@@ -1,0 +1,42 @@
+@charset "UTF-8";
+$default-color: rgb(26,133,186);
+$font-optional: #fff;
+$transition-default: 0.3s all;
+/*===============================ALL PAGE===================================*/
+.container
+{
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+/*================================HEADER====================================*/
+.logo
+{
+   font-size: 4vmin;
+   color: $font-optional;
+   transition: $transition-default;
+}
+.logo:hover
+{
+    color: #eee;
+}
+.navbar
+{
+    background-color: $default-color;
+    border-radius: 0;
+    ul
+    { 
+       li
+       {
+           a
+           {
+              color:$font-optional; 
+              transition: $transition-default;
+           }
+           a:hover
+           {
+              background-color: rgb(16,123,176)
+           }
+       }  
+    }  
+}
