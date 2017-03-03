@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
+    
         <title>Dominik Szczepaniak</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,72 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
-    </head>
     <body>
+        <!-- NAVBAR TOP MENU -->
         <header class="topbar-menu">
-            <nav class="navbar col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <nav class="navbar navbar-default navbar-inverse">
+                <div class="container-fluid top-bar-menu">
                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                         <a class="navbar-brand logo" href="index.html">dszczepaniak.pl</a>
                     </div>
-                    <ul class=" nav navbar-nav navbar-menu pull-right ">
-                        <li><a href="#" class="menu-item">Portfolio</a></li>
-                        <li><a href="#" class="menu-item">Blog</a></li>
-                        <li><a href="#" class="menu-item">O mnie</a></li>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class=" nav navbar-nav navbar-menu pull-right">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Portfolio <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item"><a class="menu-item" href="#">Moje projekty</a></li>
+                                <li class="menu-item"><a target="_blank" href="https://github.com/elszczepano">GitHub</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Blog <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item"><a target="_blank" href="http://dszczepaniak.pl/wp/category/dsp2017/">Daj Się Poznać 2017</a></li>
+                                <li class="menu-item"><a target="_blank" href="http://dszczepaniak.pl/wp/category/informatycznie/">Informatycznie</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Obserwuj <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item"><a target="_blank" href="https://www.snapchat.com/add/xyrex54/">Snapchat</a></li>
+                                <li class="menu-item"><a target="_blank" href="https://www.instagram.com/el_szczepano/">Instagram</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#" class="menu-item">Kontakt</a></li>
                     </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <main class="container">
+        <main>
+            <!-- MAIN SECTION -->
             <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                
+                <div class="name-item">
+                    <h1><span class="author">Dominik Szczepaniak</span><small>Web developer and programmer</small></h1>
+                    
+                </div>
             </section>
-            <article class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                
+            <article class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                <h2>  </h2>
             </article>
-            <aside class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                
+            <!-- RIGHT ASIDE: DESCRIPTION, SOCIAL BUTTONS ETC.-->
+            <aside class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <h2> Kim jestem? </h2>
+                <div class="about-me-description">
+                        Witam Cię serdecznie na mojej  stronie! Jestem początkującym web developerem oraz programistą!
+                        Póki co miałem styczność z podstawowymi technologiami front-end'owymi i językiem C++. Strona na
+                        której jesteś postawła podczazs trwania projektu "<a href="http://devstyle.pl/daj-sie-poznac/">Daj Się Poznać 2017</a>"
+                        jako praca konkursowa. Serdecznie zapraszam Cię do przejrzenia moich dotychczasowych projektów oraz do zajrzenia w linki poniżej:
+                        <a class="anchor-button btn  btn-socialize" target="_blank" href="https://github.com/elszczepano">GitHub</a>
+                        <a class="anchor-button btn  btn-socialize" target="_blank" href="http://pl.spoj.com/users/el_szczepano98/">SPOJ</a>
+                        <a class="anchor-button btn  btn-socialize" target="_blank" href="https://www.snapchat.com/add/xyrex54/">Snapchat</a>
+                </div>
             </aside>
         </main>
         <footer>

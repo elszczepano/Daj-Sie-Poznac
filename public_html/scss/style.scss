@@ -1,14 +1,26 @@
 @charset "UTF-8";
-$default-color: rgb(26,133,186);
+$font-main: #000;
 $font-optional: #fff;
 $transition-default: 0.3s all;
-/*===============================ALL PAGE===================================*/
-.container
+$auto: 0 auto;
+@mixin anchor-clear
 {
-    max-width: 1400px;
-    margin:0 auto;
+    color: #fff;
+    text-decoration:none;
 }
-
+@mixin social-button-theme
+{
+    transform: scale(1.05);
+}
+/*===============================ALL PAGE===================================*/
+main
+{
+    margin: $auto;
+}
+.anchor-button, .anchor-button:hover
+{
+    @include anchor-clear;
+}
 /*================================HEADER====================================*/
 .logo
 {
@@ -22,21 +34,107 @@ $transition-default: 0.3s all;
 }
 .navbar
 {
-    background-color: $default-color;
     border-radius: 0;
-    ul
-    { 
-       li
-       {
-           a
-           {
-              color:$font-optional; 
-              transition: $transition-default;
-           }
-           a:hover
-           {
-              background-color: rgb(16,123,176)
-           }
-       }  
-    }  
+    padding: 0.5vmin 0;
+}
+.menu-item
+{
+    transition: $transition-default;
+}
+/*=================================MAIN====================================*/
+h1 > .author
+{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3vmin;
+    font-size: 7vmin;
+    font-weight: 700;
+}
+.name-item
+{
+    height: 100%;
+}
+.name-item > h1
+{
+    border-bottom: 1px solid rgba(0,0,0,0.2); 
+}
+.name-item > h1 > small
+{
+    display: block;
+    text-align: center;
+    padding-bottom: 9vmin;
+    padding-top: 1vmin;
+    color: rgba(0,0,0,0.4);
+    font-size: 3vmin;
+}
+h3.hr-divider-heading
+{
+    text-align: center;
+}
+/*===============================ABOUT ME===================================*/
+.about-me-description
+{
+    text-align: justify;
+    font-size: 1.6vmin;
+    padding: 2vmin 0;
+    box-sizing: border-box;
+}
+.btn-socialize
+{
+    display: block;
+    margin: 2vmin auto;
+    padding: 1.5vmin 7vmin;
+    border-bottom-left-radius: 10%;
+    background: $font-optional;
+    border: 3px solid $font-main;
+    border-radius: 50px;
+    color: $font-main;
+    transition: 0.3s;
+    font-size: 2vmin;
+    width: 300px;
+}
+.btn-socialize:hover
+{
+    color:$font-optional;
+}
+.btn-socialize:clicked
+{
+    outline: #fff;
+}
+.btn-socialize:nth-of-type(2):hover
+{   
+  @include social-button-theme;
+  background-color: $font-main;
+  
+}
+.btn-socialize:nth-of-type(3)
+{
+ border-color: #337AB7;   
+}
+.btn-socialize:nth-of-type(3):hover
+{
+    background-color: #337AB7;
+    color:$font-optional;
+    @include social-button-theme;
+}
+.btn-socialize:nth-of-type(4)
+{ 
+    border-color: #FFFC00;
+}
+.btn-socialize:nth-of-type(4):hover
+{
+    @include social-button-theme;
+    background-color: #FFFC00;
+    color:$font-main;
+}
+/*============================MEDIA QUERIES=================================*/
+@media screen and (max-width:768px)
+{
+    .navbar-menu
+{
+    width:100%;
+    margin:0;
+    text-align: center;
+}
 }
