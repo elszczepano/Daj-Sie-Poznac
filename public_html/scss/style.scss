@@ -40,6 +40,11 @@ main
 .menu-item
 {
     transition: $transition-default;
+    cursor: pointer;
+}
+.textarea-contact 
+{
+   resize: none;
 }
 /*=================================MAIN====================================*/
 h1 > .author
