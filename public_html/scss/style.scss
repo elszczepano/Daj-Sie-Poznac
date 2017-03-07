@@ -13,6 +13,10 @@ $auto: 0 auto;
     transform: scale(1.05);
 }
 /*===============================ALL PAGE===================================*/
+body
+{
+    overflow: hidden;
+}
 main
 {
     margin: $auto;
@@ -97,7 +101,7 @@ h3.hr-divider-heading
     color: $font-main;
     transition: 0.3s;
     font-size: 2vmin;
-    width: 300px;
+    width: 275px;
 }
 .btn-socialize:hover
 {
