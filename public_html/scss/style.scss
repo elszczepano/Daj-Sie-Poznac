@@ -15,7 +15,7 @@ $auto: 0 auto;
 /*===============================ALL PAGE===================================*/
 body
 {
-    overflow: hidden;
+    overflow-x: auto;
 }
 main
 {
@@ -24,6 +24,12 @@ main
 .anchor-button, .anchor-button:hover
 {
     @include anchor-clear;
+}
+footer
+{
+    width:100%;
+    float:left;
+    
 }
 /*================================HEADER====================================*/
 .logo
