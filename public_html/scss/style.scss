@@ -87,6 +87,18 @@ h3.hr-divider-heading
 {
     text-align: center;
 }
+.projects-container
+{
+    img
+    {
+        padding:3vmin;
+        transition:0.4s all;
+    }
+    img:hover
+    {
+        transform: scale(1.07);
+    }
+}
 /*===============================ABOUT ME===================================*/
 .about-me-description
 {
@@ -147,9 +159,22 @@ h3.hr-divider-heading
 @media screen and (max-width:768px)
 {
     .navbar-menu
-{
+    {
     width:100%;
     margin:0;
     text-align: center;
-}
+    }
+    .about-me-description
+    {
+    font-size: 3vmin; 
+    }
+    .anchor-button
+    {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:65%;
+        height:10vmin;
+        font-size: 4vmin; 
+    }
 }
