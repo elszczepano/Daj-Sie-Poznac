@@ -15,10 +15,11 @@ $insta: -webkit-gradient(
     color: #fff;
     text-decoration:none;
 }
-@mixin social-button-theme
+@mixin resize
 {
     transform: scale(1.05);
 }
+
 /*===============================ALL PAGE===================================*/
 body
 {
@@ -108,8 +109,7 @@ h3.hr-divider-heading
     }
     img:hover
     {
-        transform: scale(1.07);
-        
+        @include resize;   
     }
 }
 /*===============================ABOUT ME===================================*/
@@ -144,7 +144,7 @@ h3.hr-divider-heading
 }
 .btn-socialize:nth-of-type(2):hover
 {   
-  @include social-button-theme;
+  @include resize;
   background-color: $font-main;
   
 }
@@ -156,7 +156,7 @@ h3.hr-divider-heading
 {
     background-color: #337AB7;
     color:$font-optional;
-    @include social-button-theme;
+    @include resize;
 }
 .btn-socialize:nth-of-type(4)
 { 
@@ -164,7 +164,7 @@ h3.hr-divider-heading
 }
 .btn-socialize:nth-of-type(4):hover
 {
-    @include social-button-theme;
+    @include resize;
     background-color: #FFFC00;
     color:$font-main;
 }
@@ -177,8 +177,28 @@ h3.hr-divider-heading
 }
 .btn-socialize:nth-of-type(5):hover
 {
-    @include social-button-theme;
+    @include resize;
     color: $font-main;
+}
+/*===============================MY SKILLS==================================*/
+.my-skills
+{
+    margin: $auto;
+}
+.skill-img
+{
+    display:block;
+    margin: $auto;
+    width:90%;
+    overflow:hidden;
+    transition: $transition-default;
+    box-sizing:border-box;
+    padding:2vmin;
+    cursor:pointer;
+}
+.skill-img:hover
+{
+    @include resize
 }
 /*============================MEDIA QUERIES=================================*/
 @media screen and (max-width:768px)
@@ -203,10 +223,18 @@ h3.hr-divider-heading
         font-size: 4vmin; 
     }
     .btn-socialize:nth-of-type(5)
-{
+    {
     background-image: $insta;
     border: none;
-    width: 275px*1.4;
+    width: 60vmin;
     height: 5vmin*2;
+    }
+    .skill-img
+{
+    display:block;
+    margin: $auto;
+    width: 90%;
+    overflow: hidden;
+    padding: 3vmin;
 }
 }
