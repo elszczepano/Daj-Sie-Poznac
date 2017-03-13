@@ -44,6 +44,10 @@ footer
     float:left;
     margin-top: 3vmin;
 }
+section
+{
+    margin: 1vmin auto;
+}
 /*================================HEADER====================================*/
 .logo
 {
@@ -187,18 +191,56 @@ h3.hr-divider-heading
 }
 .skill-img
 {
-    display:block;
+    display: block;
     margin: $auto;
-    width:90%;
-    overflow:hidden;
+    width: 90%;
+    overflow: hidden;
     transition: $transition-default;
-    box-sizing:border-box;
-    padding:2vmin;
-    cursor:pointer;
+    box-sizing: border-box;
+    padding: 2vmin;
+    cursor: pointer;
 }
 .skill-img:hover
 {
     @include resize
+}
+/*==============================VISIT ALSO==================================*/
+.visit-also
+{
+    box-sizing: border-box;
+    div
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        transition: $transition-default;
+        margin-top: 2vmin;
+        .kbkk
+        {
+          font-size: 3vmin;
+          padding: 1vmin 2.5vmin;
+          text-decoration: none;
+          background-color: #272727;
+          color: $font-optional;
+          font-family: 'Josefin Sans', sans-serif;
+        }
+        .eduto
+        {
+            background-color: #34495e;
+            padding: 1.5vmin 2vmin;
+            width: 40%;
+        }
+        .dsp
+        {
+            display:flex;
+            width:60%;
+        }
+    }
+    div:hover
+    {
+        transform: scale(1.1);
+        transition: $transition-default;
+    }
 }
 /*============================MEDIA QUERIES=================================*/
 @media screen and (max-width:768px)
@@ -236,5 +278,32 @@ h3.hr-divider-heading
     width: 90%;
     overflow: hidden;
     padding: 3vmin;
+}
+.visit-also
+{
+    div
+    {
+        .kbkk
+        {
+          font-size:4vmin;
+          padding: 2.2vmin 9vmin;
+          text-decoration:none;
+          background-color: #272727;
+          color: $font-optional;
+          font-family: 'Josefin Sans', sans-serif;
+        } 
+        .eduto
+        {
+            width: 100%;
+        }
+        .dsp
+        {
+            width:125%;
+        }
+    }
+    div:hover
+    {
+        transform: scale(1.05); 
+    }
 }
 }
