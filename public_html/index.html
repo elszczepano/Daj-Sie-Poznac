@@ -7,6 +7,7 @@
         <!-- INCLUDING CSS'S -->
         <link href="css/normalize.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet">
@@ -29,22 +30,22 @@
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Portfolio <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li class="menu-item"><a class="menu-item" href="#projects">Moje projekty</a></li>
-                                <li class="menu-item"><a target="_blank" href="https://github.com/elszczepano">GitHub</a></li>
+                                <li class="menu-item text-center"><a class="menu-item" href="#projects">Moje projekty</a></li>
+                                <li class="menu-item text-center"><a target="_blank" href="https://github.com/elszczepano">GitHub</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Blog <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li class="menu-item"><a target="_blank" href="http://dszczepaniak.pl/wp/category/dsp2017/">Daj Się Poznać 2017</a></li>
-                                <li class="menu-item"><a target="_blank" href="http://dszczepaniak.pl/wp/category/informatycznie/">Informatycznie</a></li>
+                                <li class="text-center menu-item"><a target="_blank" href="http://dszczepaniak.pl/wp/category/dsp2017/">Daj Się Poznać 2017</a></li>
+                                <li class="text-center menu-item"><a target="_blank" href="http://dszczepaniak.pl/wp/category/informatycznie/">Informatycznie</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Obserwuj <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li class="menu-item"><a target="_blank" href="https://www.snapchat.com/add/xyrex54/">Snapchat</a></li>
-                                <li class="menu-item"><a target="_blank" href="https://www.instagram.com/el_szczepano/">Instagram</a></li>
+                                <li class="text-center menu-item"><a target="_blank" href="https://www.snapchat.com/add/xyrex54/">Snapchat</a></li>
+                                <li class="text-center menu-item"><a target="_blank" href="https://www.instagram.com/el_szczepano/">Instagram</a></li>
                             </ul>
                         </li>
                         <li><a data-toggle="modal" data-target="#myModal" class="menu-item">Kontakt</a>
@@ -95,16 +96,9 @@
                     <h1><span class="author">Dominik Szczepaniak</span><small>Web developer and programmer</small></h1>
                 </div>
             </section>
-            <!-- SECTION WITH NEWEST BLOG ARTICLE-->
+            <!-- SECTION WITH BLOG -->
             <section class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
-                <h2 class="text-center">Najnowsze posty z mojego bloga technologicznego</h2>
-                <hr>
-                <article>
-                <h3>Najnowszy wpis na blogu</h3>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    <a href="#">Czytaj całość...</a>
-                </article>
-                <hr>
+                
                 <h2 class="text-center" id="projects">Moje projekty</h2>
                 <hr>
                 <article>
@@ -113,11 +107,19 @@
                         <a href="http://samurajkebab.cf"><img class="img-responsive col-xs-12 col-sm-6 col-md-6 col-lg-6" src="img/samuraj-miniature.png" alt="montom-miniature"></a>
                     </div>
                 </article>
+                <h2 class="text-center">Blog technologiczny</h2>
+                <hr>
+                <article class="text-justify blog">
+                    Serdecznie zapraszam do odwiedzenia mojego bloga! Publikuję tam wpisy z branży technologicznej.
+                    Znajdują się tam wpisy zarówno zakrawające o hardware jak i o tworzenie stron www, technologie webowe i programowanie.
+                    Wpisy ukazjuą się regularnie, zaś spora ich część dotyczy konkursu DSP2017 na potrzeby którego powstał blog.
+                    Linki do poszczególnych sekcji bloga znajdują się w menu strony, zaś klikając <a href="http://dszczepaniak.pl/wp">TUTAJ</a> trafisz na stronę główną bloga. 
+                </article>
             </section>
             <!-- RIGHT ASIDE: DESCRIPTION, SOCIAL BUTTONS ETC.-->
             <aside class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                    <h2> Kim jestem? </h2>
-                <div class="about-me-description">
+                    <h2 class="text-center"> Kim jestem? </h2>
+                <div class="text-justify">
                         Witam Cię serdecznie na mojej  stronie! Jestem początkującym web developerem oraz programistą!
                         Póki co miałem styczność z podstawowymi technologiami front-end'owymi i językiem C++. Strona na
                         której jesteś powstała podczazs trwania projektu "<a href="http://devstyle.pl/daj-sie-poznac/">Daj Się Poznać 2017</a>"
@@ -147,7 +149,10 @@
             
         </main>
         <footer class="text-center panel-footer">
-            Copyright 2017 &copy; Wszelkie prawa zastrzeżone &#124; Autor Dominik Szczepaniak &#124; Strona powstała jako projekt w konkursie "<a href="http://devstyle.pl/daj-sie-poznac/">Daj Się Poznać 2017</a>".
+            <p>Copyright 2017 &copy; Wszelkie prawa zastrzeżone &#124; Autor Dominik Szczepaniak</p>
+            <p>Strona powstała jako projekt w konkursie "<a href="http://devstyle.pl/daj-sie-poznac/">Daj Się Poznać 2017</a>"</p>
+            <p>Kontakt: kontakt@dszczepaniak.pl lub poprzez formularz kontaktowy</p>
+            
             <section class="visit-also col-xs-12  col-sm-12 col-md-12 col-lg-12">
                 <h3 class="text-center">Zobacz także:</h3>
                 <div class=" col-xs-4 col-sm-4 col-md-4  col-lg-4">

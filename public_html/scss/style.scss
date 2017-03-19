@@ -3,6 +3,7 @@ $font-main: #000;
 $font-optional: #fff;
 $transition-default: 0.3s all;
 $auto: 0 auto;
+$pt: 'PT Serif Caption', serif;
 $insta: -webkit-gradient(
 	linear,
 	right bottom,
@@ -27,6 +28,7 @@ body
 }
 main
 {
+    font-family: $pt;
     margin: $auto;
     max-width: 1800px;
 }
@@ -40,13 +42,18 @@ main
 }
 footer
 {
+    font-family: $pt;
     width:100%;
     float:left;
     margin-top: 3vmin;
 }
 section
-{
+{  
     margin: 1vmin auto;
+}
+header
+{
+    font-family: $pt;
 }
 /*================================HEADER====================================*/
 .logo
@@ -116,14 +123,12 @@ h3.hr-divider-heading
         @include resize;   
     }
 }
-/*===============================ABOUT ME===================================*/
-.about-me-description
+.text-justify
 {
-    text-align: justify;
+    box-sizing:border-box;
     font-size: 1.6vmin;
-    padding: 2vmin 0;
-    box-sizing: border-box;
 }
+/*===============================ABOUT ME===================================*/
 .btn-socialize
 {
     display: block;
@@ -251,7 +256,7 @@ h3.hr-divider-heading
     margin: 0;
     text-align: center;
     }
-    .about-me-description
+    .text-justify
     {
     font-size: 3vmin; 
     }
@@ -272,13 +277,13 @@ h3.hr-divider-heading
     height: 5vmin*2;
     }
     .skill-img
-{
+    {
     display:block;
     margin: $auto;
     width: 90%;
     overflow: hidden;
     padding: 3vmin;
-}
+    }
 .visit-also
 {
     div
