@@ -1,9 +1,7 @@
+        <meta http-equiv="Refresh" CONTENT="0; URL=http://dszczepaniak.pl">
         <?php
-        header('Location: ../index.html');
-        $headers = 'From: '.$_POST['name'].' e-mail: '.$_POST['email'].'\r\n'.
-                'Content-Type: text/html; charset=utf-8';
         $to = 'xyrex54@gmail.com';
-        $subject = $_POST['subject'].'\n';
-        $message = $_POST['content'].'\n';
-        mail($to, $subject, $message, $headers);
+        $subject = 'Wiadomosc od: '.$_POST['name'].' e-mail: '.$_POST['email'];
+        $message = 'Temat:'.$_POST['subject'].' Tresc wiadomosci: '.$_POST['content'];
+        mail($to, $subject, $message);
         ?>
