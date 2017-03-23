@@ -1,7 +1,36 @@
-        <meta http-equiv="Refresh" CONTENT="0; URL=http://dszczepaniak.pl">
-        <?php
-        $to = 'xyrex54@gmail.com';
-        $subject = 'Wiadomosc od: '.$_POST['name'].' e-mail: '.$_POST['email'];
-        $message = 'Temat:'.$_POST['subject'].' Tresc wiadomosci: '.$_POST['content'];
-        mail($to, $subject, $message);
-        ?>
+<meta http-equiv="Refresh" content="0; URL=http://example.com">
+<?php
+
+$email = $_REQUEST['email'] ;
+$name = $_REQUEST['name'] ;
+$subject = $_REQUEST['subject'] ;
+$content = $_REQUEST['content'] ;
+
+require("../PHPMailer_5.2.0/class.phpmailer.php");
+
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl';
+$mail->Host = "example.example.com";
+$mail->Port = 465;
+$mail->Username = "example@example.com";
+$mail->Password = "password";
+$mail->SetFrom('example@example.com','Zapytanie - formularz kontaktowy');
+$mail->SMTPDebug = 2;
+$mail->From = 'example@example.com';
+$mail->AddAddress('another@example.com', "Zapytanie - formularz kontaktowy");
+$mail->Subject = $subject;
+
+$mail->Body    = 'Od: '.$name.' e-mail: '.$email.' Tresc wiadomosci: '.$content;
+$mail->AltBody = 'Od: '.$name.' e-mail: '.$email.' Tresc wiadomosci: '.$content;
+$mail->IsHTML(true);
+if(!$mail->Send())
+{
+   echo "Message could not be sent. <p>";
+   echo "Mailer Error: " . $mail->ErrorInfo;
+   exit;
+}
+
+echo "Message has been sent";
+?>
