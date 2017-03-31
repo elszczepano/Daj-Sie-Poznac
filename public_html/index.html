@@ -10,7 +10,10 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/fontello.css" rel="stylesheet">
+        <link href="css/fontello-codes.css" rel="stylesheet">
+        <link href="css/fontello-embedded.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet"> 
     <body>
         <!-- NAVBAR TOP MENU -->
         <header class="topbar-menu">
@@ -41,13 +44,6 @@
                                 <li class="text-center menu-item"><a target="_blank" href="http://dszczepaniak.pl/wp/category/informatycznie/">Informatycznie</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Obserwuj <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li class="text-center menu-item"><a target="_blank" href="https://www.snapchat.com/add/xyrex54/">Snapchat</a></li>
-                                <li class="text-center menu-item"><a target="_blank" href="https://www.instagram.com/el_szczepano/">Instagram</a></li>
-                            </ul>
-                        </li>
                         <li><a data-toggle="modal" data-target="#myModal" class="menu-item">Kontakt</a>
                         <!-- Contact form window -->
                             <div id="myModal" class="modal fade" role="dialog">
@@ -55,7 +51,7 @@
                                     <div class="modal-content">
                                     <div class="modal-header">
                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                             <h4 class="modal-title ">Skontaktuj się ze mną</h4>
+                                             <h4 class="modal-title ">Skontaktuj się ze mną <i class="icon-email"></i></h4>
                                     </div>
                                     <form id="contact-form" action="scripts/contactform.php" method="post">
                                     <div class="modal-body">
@@ -95,26 +91,25 @@
                 <div class="name-item">
                     <h1><span class="author">Dominik Szczepaniak</span><small>Web developer and programmer</small></h1>
                 </div>
+                <hr>
             </section>
             <!-- SECTION WITH BLOG -->
             <section class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
-                
                 <h2 class="text-center" id="projects">Moje projekty</h2>
-                <hr>
-                <article>
+                <section>
                     <div class=" projects-container col-xs-12 col-sm-12 col-md-12 col-lg-12">    
-                        <a href="http://montom-zaune.eu"><img class="img-responsive col-xs-12 col-sm-6 col-md-6 col-lg-6 " src="img/montom-miniature.png" alt="montom-miniature"></a>
-                        <a href="http://samurajkebab.cf"><img class="img-responsive col-xs-12 col-sm-6 col-md-6 col-lg-6" src="img/samuraj-miniature.png" alt="montom-miniature"></a>
+                        <a target="_blank" href="http://montom-zaune.eu"><img class="img-responsive col-xs-12 col-sm-6 col-md-6 col-lg-6 " src="img/montom-miniature.png" alt="montom-miniature"></a>
+                        <a target="_blank" href="http://samurajkebab.cf"><img class="img-responsive col-xs-12 col-sm-6 col-md-6 col-lg-6" src="img/samuraj-miniature.png" alt="montom-miniature"></a>
                     </div>
-                </article>
+                </section>
                 <h2 class="text-center">Blog technologiczny</h2>
                 <hr>
-                <article class="text-justify blog">
+                <section class="text-justify blog">
                     Serdecznie zapraszam do odwiedzenia mojego bloga! Publikuję tam wpisy z branży technologicznej.
                     Znajdują się tam wpisy zarówno zakrawające o hardware jak i o tworzenie stron www, technologie webowe i programowanie.
                     Wpisy ukazjuą się regularnie, zaś spora ich część dotyczy konkursu DSP2017 na potrzeby którego powstał blog.
                     Linki do poszczególnych sekcji bloga znajdują się w menu strony, zaś klikając <a href="http://dszczepaniak.pl/wp">TUTAJ</a> trafisz na stronę główną bloga. 
-                </article>
+                </section>
             </section>
             <!-- RIGHT ASIDE: DESCRIPTION, SOCIAL BUTTONS ETC.-->
             <aside class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
@@ -124,10 +119,9 @@
                         Póki co miałem styczność z podstawowymi technologiami front-end'owymi i językiem C++. Strona na
                         której jesteś powstała podczazs trwania projektu "<a href="http://devstyle.pl/daj-sie-poznac/">Daj Się Poznać 2017</a>"
                         jako praca konkursowa. Serdecznie zapraszam Cię do przejrzenia moich dotychczasowych projektów oraz do zajrzenia w linki poniżej:
-                        <a class="anchor-button btn  btn-socialize" target="_blank" href="https://github.com/elszczepano">GitHub</a>
+                        <a class="anchor-button btn  btn-socialize" target="_blank" href="https://github.com/elszczepano">GitHub <i class=" icon-github"></i></a>
                         <a class="anchor-button btn  btn-socialize" target="_blank" href="http://pl.spoj.com/users/el_szczepano98/">SPOJ</a>
-                        <a class="anchor-button btn  btn-socialize" target="_blank" href="https://www.snapchat.com/add/xyrex54/">Snapchat</a>
-                        <a class="anchor-button btn  btn-socialize" target="_blank" href="https://www.instagram.com/el_szczepano/">Instagram</a>
+                        <a class="anchor-button btn  btn-socialize" target="_blank" href="https://www.snapchat.com/add/xyrex54/">Snapchat <i class="icon-snapchat-ghost"></i></a>
                 </div>
             </aside>
              <section class="my-skills  col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -145,24 +139,22 @@
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
                     <img class=" skill-img" src="img/responsive_web_design.png" alt="RWD">
                 </div>
-            </section>
-            
+            </section>  
         </main>
         <footer class="text-center panel-footer">
             <p>Copyright 2017 &copy; Wszelkie prawa zastrzeżone &#124; Autor Dominik Szczepaniak</p>
             <p>Strona powstała jako projekt w konkursie "<a href="http://devstyle.pl/daj-sie-poznac/">Daj Się Poznać 2017</a>"</p>
             <p>Kontakt: kontakt@dszczepaniak.pl lub poprzez formularz kontaktowy</p>
-            
             <section class="visit-also col-xs-12  col-sm-12 col-md-12 col-lg-12">
                 <h3 class="text-center">Zobacz także:</h3>
                 <div class=" col-xs-4 col-sm-4 col-md-4  col-lg-4">
                     <a href="http://kbkk.pl" class="kbkk" target="_blank">kbkk.pl</a>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="http://eduto.pl" target="_blank"><img class="eduto" src="img/eduto.png"></a>
+                    <a href="http://eduto.pl" target="_blank"><img class="eduto" src="img/eduto.png" alt="eduto"></a>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="http://devstyle.pl/daj-sie-poznac/" target="_blank"><img class="dsp" src="img/dsp2017-1.png"></a>
+                    <a href="http://devstyle.pl/daj-sie-poznac/" target="_blank"><img class="dsp" src="img/dsp2017-1.png" alt="dsp"></a>
                 </div>
             </section>
         </footer>

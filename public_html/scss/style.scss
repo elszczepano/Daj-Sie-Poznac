@@ -94,10 +94,6 @@ h1 > .author
 {
     height: 100%;
 }
-.name-item > h1
-{
-    border-bottom: 1px solid rgba(0,0,0,0.2); 
-}
 .name-item > h1 > small
 {
     display: block;
@@ -128,6 +124,10 @@ h3.hr-divider-heading
     box-sizing:border-box;
     font-size: 1.6vmin;
 }
+.blog
+{
+    font-size:2vmin;
+}
 /*===============================ABOUT ME===================================*/
 .btn-socialize
 {
@@ -140,7 +140,7 @@ h3.hr-divider-heading
     border-radius: 50px;
     color: $font-main;
     transition: 0.3s;
-    font-size: 2vmin;
+    font-size: 2.4vmin;
     width: 275px;
 }
 .btn-socialize:hover
@@ -155,7 +155,6 @@ h3.hr-divider-heading
 {   
   @include resize;
   background-color: $font-main;
-  
 }
 .btn-socialize:nth-of-type(3)
 {
@@ -291,19 +290,20 @@ h3.hr-divider-heading
         .kbkk
         {
           font-size:4vmin;
-          padding: 2.2vmin 9vmin;
+          padding: 1.4vmin 5.5vmin;
           text-decoration:none;
           background-color: #272727;
           color: $font-optional;
+          text-align: center;
           font-family: 'Josefin Sans', sans-serif;
         } 
         .eduto
         {
-            width: 100%;
+            width: 20vmin;
         }
         .dsp
         {
-            width:125%;
+            width: 20vmin;
         }
     }
     div:hover
