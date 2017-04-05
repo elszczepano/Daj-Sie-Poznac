@@ -33,8 +33,9 @@
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle menu-item" data-toggle="dropdown" role="button" aria-haspopup="true" > Portfolio <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li class="menu-item text-center"><a class="menu-item" href="#projects">Moje projekty</a></li>
+                                <li id="myProjects" class="menu-item text-center"><a class="menu-item" href="#projects">Moje projekty</a></li>
                                 <li class="menu-item text-center"><a target="_blank" href="https://github.com/elszczepano">GitHub</a></li>
+                                <li id="mySkills" class="menu-item text-center"><a class="menu-item" href="#skills">Moje umiejętności</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -125,7 +126,7 @@
                 </div>
             </aside>
              <section class="my-skills  col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h2 class="text-center">Moje umiejętności</h2>
+                <h2 class="text-center" id="skills">Moje umiejętności</h2>
                 <hr>
                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
                     <img class="skill-img" src="img/HTML5_Logo_512.png" alt="HTML5">
@@ -159,6 +160,8 @@
             </section>
         </footer>
         <!-- INCLUDING SCRIPTS -->
+        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <script src="scripts/slowslide.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
