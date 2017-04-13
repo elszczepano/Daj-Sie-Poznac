@@ -4,13 +4,6 @@ $font-optional: #fff;
 $transition-default: 0.3s all;
 $auto: 0 auto;
 $pt: 'PT Serif Caption', serif;
-$insta: -webkit-gradient(
-	linear,
-	right bottom,
-	left bottom,
-	color-stop(0, #FAFD32),
-	color-stop(1, #EE2A7C)
-);
 @mixin anchor-clear
 {
     color: #fff;
@@ -48,7 +41,7 @@ footer
     margin-top: 3vmin;
 }
 section
-{  
+{
     margin: 1vmin auto;
 }
 header
@@ -76,7 +69,7 @@ header
     transition: $transition-default;
     cursor: pointer;
 }
-.textarea-contact 
+.textarea-contact
 {
    resize: none;
 }
@@ -116,7 +109,7 @@ h3.hr-divider-heading
     }
     img:hover
     {
-        @include resize;   
+        @include resize;
     }
 }
 .text-justify
@@ -152,13 +145,13 @@ h3.hr-divider-heading
     outline: #fff;
 }
 .btn-socialize:nth-of-type(2):hover
-{   
+{
   @include resize;
   background-color: $font-main;
 }
 .btn-socialize:nth-of-type(3)
 {
- border-color: #337AB7;   
+ border-color: #337AB7;
 }
 .btn-socialize:nth-of-type(3):hover
 {
@@ -167,7 +160,7 @@ h3.hr-divider-heading
     @include resize;
 }
 .btn-socialize:nth-of-type(4)
-{ 
+{
     border-color: #FFFC00;
 }
 .btn-socialize:nth-of-type(4):hover
@@ -175,13 +168,6 @@ h3.hr-divider-heading
     @include resize;
     background-color: #FFFC00;
     color:$font-main;
-}
-.btn-socialize:nth-of-type(5)
-{
-    background-image: $insta;
-    border:none;
-    width: 275px + 3px;
-    height: 0.8vmin + 5.5vmin;
 }
 .btn-socialize:nth-of-type(5):hover
 {
@@ -215,7 +201,7 @@ h3.hr-divider-heading
     div
     {
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
         transition: $transition-default;
         margin-top: 2vmin;
@@ -257,7 +243,7 @@ h3.hr-divider-heading
     }
     .text-justify
     {
-    font-size: 3vmin; 
+    font-size: 3vmin;
     }
     .anchor-button
     {
@@ -266,14 +252,7 @@ h3.hr-divider-heading
         justify-content: center;
         width: 65%;
         height: 10vmin;
-        font-size: 4vmin; 
-    }
-    .btn-socialize:nth-of-type(5)
-    {
-    background-image: $insta;
-    border: none;
-    width: 60vmin;
-    height: 5vmin*2;
+        font-size: 4vmin;
     }
     .skill-img
     {
@@ -296,7 +275,7 @@ h3.hr-divider-heading
           color: $font-optional;
           text-align: center;
           font-family: 'Josefin Sans', sans-serif;
-        } 
+        }
         .eduto
         {
             width: 20vmin;
@@ -308,7 +287,7 @@ h3.hr-divider-heading
     }
     div:hover
     {
-        transform: scale(1.05); 
+        transform: scale(1.05);
     }
 }
 }
