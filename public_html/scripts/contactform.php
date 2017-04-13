@@ -1,6 +1,4 @@
-<meta http-equiv="Refresh" content="0; URL=http://example.com">
 <?php
-
 $email = $_REQUEST['email'] ;
 $name = $_REQUEST['name'] ;
 $subject = $_REQUEST['subject'] ;
@@ -27,10 +25,10 @@ $mail->AltBody = 'Od: '.$name.' e-mail: '.$email.' Tresc wiadomosci: '.$content;
 $mail->IsHTML(true);
 if(!$mail->Send())
 {
-   echo "Message could not be sent. <p>";
+   echo "Message could not be sent.";
    echo "Mailer Error: " . $mail->ErrorInfo;
    exit;
 }
-
 echo "Message has been sent";
 ?>
+<meta http-equiv="Refresh" content="0; URL=http://example.com">
